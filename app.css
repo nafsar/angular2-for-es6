@@ -1,0 +1,15 @@
+    .inputText {
+        width: 260px;
+        height: 30px;
+        margin:0 20px 0 0;
+        font-size: 16px;
+        vertical-align: top;
+        border:solid 1px #C0C0C0;
+    }
+    .deleteColor{
+        color:#F70909;
+    }
+
+    .addText{
+        color:#03630D;
+    }

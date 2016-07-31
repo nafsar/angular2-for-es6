@@ -1,0 +1,16 @@
+<h2>Angular 2 - for JavaScript</h2>
+<div>
+    <form (submit)="addItem($event)">
+        <input [(ngModel)]="myList" (keyup.enter)="myList=''" class="inputText" placeholder="type in some texts" />
+        <input type="submit" [disabled]="!checkItem(myList)" Value="Add" />
+        <div [hidden]="checkItem(myList)" class="addText">Ready...</div>
+    </form>
+
+</div>
+
+<ol>
+    <li *ngFor="#item of listObj #i=index">
+        <span>{{ item.myList }}</span>
+        <span class="deleteColor" (click)="deleteItem(i)">&#x274E;</span>
+    </li>
+</ol>
