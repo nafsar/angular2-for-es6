@@ -10,11 +10,7 @@
                 this.myList = '';
                 this.listObj = [];
             },
-            checkItem: (myList) => {
-                var lstval = true;
-                if (myList === '') { lstval = false; };
-                return lstval;
-            },
+            checkItem: myList => (myList ==='') ? false:true,
             deleteItem: function (index) {
                 this.listObj.splice(index, 1);
             },
